@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&family=Noto+Serif+Todhri&display=swap');
+
+:root {
+    --lightPurple: #967aaa; /*цвет лайт перпл*/
+    --puple: #693587; /*цвет перпл*/
+    --sizeFontTwenty: 20px; /*размер текста - 20px*/
+    --sizeFontSixteen: 16px; /*размер текста - 16px*/
+    --font-family: "Lekton", monospace; /* Шрифт: Лектон */
+    --black: #000; /*Черный цвет*/
+    --white: #fff; /*Белый цвет*/
+
+}
+body {
+    background-color: var(--lightPurple);
+    font-family: var(--font-family);
+}
+.header {
+    background-color: var(--puple);
+    font-size: var(--sizeFontTwenty);
+    text-align: center;
+}
+.conteiner {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.span-text {
+    margin-left: 350px;
+    margin-right: 30px;
+    font-size: var(--sizeFontSixteen);
+}
+
+.container-photo {
+    display: flex; /* Размещаем элементы в ряд */
+    justify-content: center; /* Добавляем пространство между фотографиями */
+    gap: 100px; /* Пространство между элементами */
+    position: relative; /* Делаем контейнер относительным */
+}
+
+.photo-item {
+    text-align: center; /* Центрируем текст подписи */
+    position: relative; /* Позиционирование относительно родителя */
+}
+
+/* Стиль для подписей */
+.caption {
+    margin-top: 10px; /* Отступ сверху для подписи */
+    font-size: var(--sizeFontSixteen);
+    color: var(--black);
+}
+
+/* Опционально: добавляем рамку для фотографий */
+.photo-item img {
+    border: 2px solid var(--white); /* Легкая рамка */
+    border-radius: 8px; /* Скругленные углы */
+    transition: transform 0.3s ease, position 0.3s ease; /* Плавная анимация */
+}
+.caption-love {
+    font-size: var(--sizeFontSixteen);
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s ease, position 0.3s ease; /* Плавная анимация */
+}
+
+.gif {
+    transition: transform 0.3s ease, position 0.3s ease; /* Плавная анимация */
+    display: flex;
+    height: 400px;
+    width: 400px;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 10px;
+    margin-left: 50px;
+}
