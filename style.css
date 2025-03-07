@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&family=Noto+Serif+Todhri&display=swap');
+
+:root {
+    --lightPurple: #967aaa;
+    --puple: #693587;
+    --sizeFontTwenty: 20px;
+    --sizeFontSixteen: 16px;
+    --font-family: "Lekton", monospace;
+    --black: #000;
+    --white: #fff;
+}
+
+body {
+    background-color: var(--lightPurple);
+    font-family: var(--font-family);
+}
+
+.header {
+    background-color: var(--puple);
+    font-size: var(--sizeFontTwenty);
+    text-align: center;
+    padding: 20px;
+}
+
+.conteiner {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.span-text {
+    margin-left: 350px;
+    margin-right: 30px;
+    font-size: var(--sizeFontSixteen);
+}
+
+.container-photo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+.photo-item {
+    text-align: center;
+    position: relative;
+    max-width: 400px; /* Ограничиваем ширину контейнера */
+}
+
+.photo-item img {
+    border: 2px solid var(--white);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 400px; /* Максимальная ширина для десктопа */
+    height: auto;
+    margin: 0 auto;
+}
+
+.caption {
+    margin-top: 10px;
+    font-size: var(--sizeFontSixteen);
+    color: var(--black);
+}
+
+.caption-love {
+    font-size: var(--sizeFontSixteen);
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.gif {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 40px;
+    margin-left: 50px;
+    justify-content: center;
+}
+
+.gif img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    justify-content: center;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .conteiner {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .span-text {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .container-photo {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .photo-item {
+        width: 100%;
+    }
+
+    .photo-item img {
+        max-width: 300px; /* Меньше для мобильных */
+    }
+
+    .caption {
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 10px;
+    }
+
+    .gif {
+        flex-wrap: wrap;
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .gif img {
+        max-width: 200px;
+    }
+
+    .caption-love {
+        margin-top: 20px;
+    }
+}
+
+/* Дополнительные стили для десктопа */
+@media (min-width: 769px) {
+    .container-photo {
+        gap: 40px; /* Больше отступ между фото на десктопе */
+    }
+
+    .photo-item {
+        max-width: 400px; /* Максимальная ширина контейнера */
+    }
+
+    .photo-item img {
+        max-width: 400px; /* Максимальная ширина фото */
+    }
+
+    .gif {
+        margin-left: 20px; /* Корректируем отступы */
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
